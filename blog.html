@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+/* -------just fot the text */
+body {
+        display: flex;
+        justify-self: center;
+        align-items: top;
+        min-height: 100vh;
+        background: #07252d;
+      }
+
+      h2 {
+        position: relative;
+        font-size: 4em;
+        letter-spacing: 10px;
+        color: #0e3742;
+        text-transform: uppercase;
+        width: 100%;
+        text-align: center;
+        -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
+        line-height: 0.7em;
+        outline: none;
+        animation: animate 5s linear infinite;
+      }
+
+      @keyframes animate {
+        0%,
+        18%,
+        20%,
+        50.1%,
+        60%,
+        65.1%,
+        80%,
+        90.1%,
+        92% {
+          color: #0e3742;
+          text-shadow: none;
+        }
+        18.1%,
+        20.1%,
+        30%,
+        50%,
+        60.1%,
+        65%,
+        80.1%,
+        90%,
+        92.1%,
+        100% {
+          color: #fff;
+          text-shadow: 0 0 10px #03bcf4, 0 0 20px #03bcf4, 0 0 40px #03bcf4,
+            0 0 80px #03bcf4, 0 0 160px #03bcf4;
+        }
+      }
+
+      /* ------ for the images */
+
+      .maindiv {
+        width: 60%;
+        height: 400px;
+        position: absolute;
+        left: 50%;
+        top: 17%;  
+        border-radius: 20px;
+        transform: translate(-50%, 50%);
+        background-image: url("test1.jpg");
+        background-size: 100% 100%;
+        box-shadow: 1px 2px 10px 5px white;
+        animation: slider 30s infinite linear;
+      }
+
+      @keyframes slider {
+        0% {
+          background-image: url("1.jpg");
+        }
+        7% {
+          background-image: url("2.jpg");
+        }
+        14% {
+          background-image: url("3.jpg");
+        }
+        28% {
+          background-image: url("4.jpeg");
+        }
+
+        35% {
+          background-image: url("5.jpg");
+        }
+        42% {
+          background-image: url("6.jpg");
+        }
+        49% {
+          background-image: url("7.jpg");
+        }
+        56% {
+          background-image: url("8.jpg");
+        }
+
+        63% {
+          background-image: url("9.jpg");
+        }
+        70% {
+          background-image: url("10.jpeg");
+        }
+        77% {
+          background-image: url("11.jpg");
+        }
+        84% {
+          background-image: url("12.jpeg");
+        }
+
+        91% {
+          background-image: url("13.jpg");
+        }
+        98% {
+          background-image: url("14.jpg");
+        }
+      }
+
+    </style>
+
+
+    <script
+      src="https://kit.fontawesome.com/f06bfd1ba7.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>University Website Design</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
+    />
+  </head>
+  <body>
+    <section class="sub-header-blog">
+      <nav>
+        <a href="https://www.facebook.com/KEBHS" target="_blank"><img src="logo.png" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="course.html">COURSE</a></li>
+            <li><a href="blog.html">IMAGES</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+
+      <h2 contenteditable="true">images</h2>
+
+      <div class="maindiv"></div>
+     
+
+    <!-- -------------JavaScript for Toggle Menu --------- -->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>

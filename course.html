@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script
+      src="https://kit.fontawesome.com/f06bfd1ba7.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>University Website Design</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
+    />
+  </head>
+  <body>
+    <section class="sub-header-courses">
+      <nav>
+        <a href="https://www.facebook.com/KEBHS" target="_blank"
+          ><img src="logo.png"
+        /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="course.html">COURSE</a></li>
+            <li><a href="blog.html">IMAGES</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1>Our COURSE</h1>
+    </section>
+
+    <section class="blog-content">
+      <div class="row">
+        <div class="blog-right">
+          <h3>scholarship we offer</h3>
+          <div>
+            <span>4.0</span>
+            <span>100%</span>
+          </div>
+
+          <div>
+            <span>3.80 to 3.95</span>
+            <span>80%</span>
+          </div>
+          <div>
+            <span>3.60 to 3.80</span>
+            <span>60%</span>
+          </div>
+
+          <div>
+            <span>3.30 to 3.60</span>
+            <span>40%</span>
+          </div>
+          <div>
+            <span>3.0 to 3.30</span>
+            <span>20%</span>
+          </div>
+
+          <div>
+            <span>2.0 to 3.0</span>
+            <span>10%</span>
+          </div>
+      </div>
+    </section>
+    <!-- -------------course --------- -->
+    <section class="course">
+      <h1>Courses We Offer</h1>
+      <p>
+        We have different courses for sudent to enroll according to their
+        interest and need. <br />
+        Specially for <bold><big>+2 students</big></bold
+        >.
+      </p>
+      <div class="row">
+        <div class="course-col">
+          <h3>Science</h3>
+          <p>
+            We are best known for science facilities. We have best and
+            well-knowned lecturer's and advanced lab's.
+          </p>
+        </div>
+
+        <div class="course-col">
+          <h3>Management</h3>
+          <p>
+            We take care of Management student's equally. We have not compromise
+            on any aspect for their proper learning.
+          </p>
+        </div>
+        <div class="course-col">
+          <h3>Art</h3>
+          <p>
+            Art is more of a pratical knowledge then the therotical one's. So
+            considering it we have similar environment for them.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-----Facilities----->
+
+    <section class="facilities">
+      <h1>Our facilities</h1>
+      <p>
+        We make sure that every sector of the student's needs are maintained in
+        a highest degree.
+      </p>
+      <div class="row">
+        <div class="facilities-col">
+          <img src="bus.jpg" />
+          <h3>Comfortable Transportation</h3>
+          <p>
+            We have a very comfortable and relaible transportation system which
+            reaches every corner and street of the area.
+          </p>
+        </div>
+        <div class="facilities-col">
+          <img src="playground.jpg" />
+          <h3>Great Play Ground</h3>
+          <p>
+            Every month this playground is full of student and their excitement.
+          </p>
+        </div>
+        <div class="facilities-col">
+          <img src="computer-lab.jpg" />
+          <h3>Advance computer-lab</h3>
+          <p>
+            We have the Best teacher(BS) who not only teaches student computer
+            but discipline too.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- -------------Footer --------- -->
+    <section class="footer">
+      <h4>About Us</h4>
+      <p>
+        For more informaion you can visi our official Website
+        https://kanchanjunga.edu.np/.<br />
+        Or you can contact us form contact page.
+      </p>
+      <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+      </div>
+      <p>Made by Nishaan Godar Thapa 11(E)</p>
+    </section>
+    <!-- -------------JavaScript for Toggle Menu --------- -->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
